@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A. Freda Merlin | Java Developer Portfolio</title>
+  <meta name="description" content="Explore the portfolio of A. Freda Merlin, a Java Developer experienced in Spring Boot, REST APIs, Spring Security, JWT authentication, PostgreSQL, and full-stack application development." />
+  <meta name="theme-color" content="#0b0c10" />
+
+  <!-- Optional web font. If it fails to load, the system font stack in css/style.css is used. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23121420'/%3E%3Ctext x='32' y='41' font-family='Arial' font-size='26' font-weight='700' text-anchor='middle' fill='%238b9bff'%3EFM%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ SVG ICON SPRITE (no external icon dependency) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+      <symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+      <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol>
+      <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="i-grad" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+      <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+      <symbol id="i-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+      <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+      <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+      <symbol id="i-pulse" viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></symbol>
+      <symbol id="i-flame" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ AMBIENT BACKGROUND ============ -->
+  <div class="ambient" aria-hidden="true">
+    <span class="glow glow-a"></span>
+    <span class="glow glow-b"></span>
+    <span class="grid-overlay"></span>
+  </div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="brand" aria-label="A. Freda Merlin, back to top">
+        <span class="brand-mark">FM</span>
+        <span class="brand-text">Freda Merlin</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <svg class="i icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+        <svg class="i icon-close" aria-hidden="true"><use href="#i-x"/></svg>
+      </button>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="assets/resume/A_Freda_Merlin_Resume.pdf" class="btn btn-primary btn-sm js-resume" download>
+          <svg class="i" aria-hidden="true"><use href="#i-download"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-dot"></span>Java Developer · Backend Engineering</p>
+          <h1 id="hero-title">Building Secure, Scalable &amp; <span class="text-accent">Reliable Backend</span> Applications.</h1>
+          <p class="lead">I'm A. Freda Merlin, a Java Developer with experience building backend applications using Java, Spring Boot, REST APIs, Spring Security, and PostgreSQL. I enjoy developing secure, maintainable software and integrating backend systems with intuitive user experiences.</p>
+
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">Explore My Work <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            <a href="assets/resume/A_Freda_Merlin_Resume.pdf" class="btn btn-ghost js-resume" download>
+              <svg class="i" aria-hidden="true"><use href="#i-download"/></svg> Resume
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <span class="meta-item"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg> Tamil Nadu, India</span>
+            <span class="meta-sep" aria-hidden="true"></span>
+            <ul class="social-row" aria-label="Social profiles">
+              <li><a class="icon-btn is-placeholder" href="#" data-placeholder="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (replace link)" title="LinkedIn — replace this placeholder URL"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+              <li><a class="icon-btn is-placeholder" href="#" data-placeholder="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (replace link)" title="GitHub — replace this placeholder URL"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--delay:120ms">
+          <div class="portrait-wrap">
+            <div class="portrait-ring" aria-hidden="true"></div>
+
+            <div class="portrait" id="portrait">
+              <img id="profileImg" class="portrait-img" alt="Portrait of A. Freda Merlin" hidden />
+              <div class="portrait-placeholder" id="portraitPlaceholder">
+                <svg class="avatar-svg" viewBox="0 0 120 120" aria-hidden="true">
+                  <circle cx="60" cy="46" r="20"/>
+                  <path d="M20 112c0-22 18-36 40-36s40 14 40 36z"/>
+                </svg>
+              </div>
+
+              <label class="upload-overlay" id="uploadOverlay" for="photoInput">
+                <svg class="i" aria-hidden="true"><use href="#i-camera"/></svg>
+                <span>Upload Profile Photo</span>
+              </label>
+            </div>
+
+            <input type="file" id="photoInput" class="visually-hidden" accept="image/png,image/jpeg,image/webp,image/gif" aria-describedby="photoHint" />
+
+            <div class="photo-actions" id="photoActions" hidden>
+              <label for="photoInput" class="btn btn-ghost btn-xs"><svg class="i" aria-hidden="true"><use href="#i-upload"/></svg> Change photo</label>
+              <button type="button" class="btn btn-ghost btn-xs" id="photoRemove"><svg class="i" aria-hidden="true"><use href="#i-trash"/></svg> Remove</button>
+            </div>
+            <p class="photo-hint" id="photoHint" role="status">JPG, PNG, WebP or GIF · up to 3&nbsp;MB</p>
+
+            <div class="float-chip chip-a" aria-hidden="true"><span class="chip-dot"></span> Spring Boot</div>
+            <div class="float-chip chip-b" aria-hidden="true"><svg class="i"><use href="#i-db"/></svg> PostgreSQL</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">01 — About</p>
+          <h2 id="about-title">A Little About Me</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>I'm a B.Sc. Computer Science graduate with approximately one year of Java development experience at Cloudrtech. My work centres on backend applications: building features, designing secure REST APIs, managing databases, and connecting services to React.js frontends.</p>
+            <p>I care about clean code, maintainable architecture, and solving problems methodically, and I'm continuing to learn with every project I take on.</p>
+
+            <ul class="check-list">
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Backend feature development with Java and Spring Boot</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> RESTful API design and integration</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Secure authentication and role-based authorization</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> PostgreSQL operations with Hibernate/JPA</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Schema migrations using Flyway</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> API testing and documentation</li>
+              <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg> Collaboration using Git and GitHub</li>
+            </ul>
+          </div>
+
+          <figure class="code-card reveal" style="--delay:100ms" aria-label="Decorative code snippet">
+            <div class="code-bar" aria-hidden="true"><span></span><span></span><span></span><em>Developer.java</em></div>
+<pre class="code" aria-hidden="true"><code><span class="c-k">public class</span> <span class="c-t">Developer</span> {
+
+  <span class="c-k">private final</span> String name = <span class="c-s">"A. Freda Merlin"</span>;
+  <span class="c-k">private final</span> String role = <span class="c-s">"Java Developer"</span>;
+
+  <span class="c-k">public</span> List&lt;String&gt; <span class="c-f">focus</span>() {
+    <span class="c-k">return</span> List.<span class="c-f">of</span>(
+      <span class="c-s">"Secure REST APIs"</span>,
+      <span class="c-s">"Clean, maintainable code"</span>,
+      <span class="c-s">"Continuous learning"</span>
+    );
+  }
+}</code></pre>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">02 — Skills</p>
+          <h2 id="skills-title">Technical Skills</h2>
+          <p class="section-sub">The languages, frameworks and tools I work with.</p>
+        </header>
+
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg></div>
+            <h3>Programming Languages</h3>
+            <ul class="badges"><li>Java</li><li>SQL</li><li>JavaScript</li></ul>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay:60ms">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-server"/></svg></div>
+            <h3>Backend Development</h3>
+            <ul class="badges"><li>Core Java</li><li>Spring Boot</li><li>RESTful APIs</li><li>Spring Security</li><li>JWT Authentication</li><li>JDBC</li><li>Hibernate/JPA</li></ul>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay:120ms">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-db"/></svg></div>
+            <h3>Databases &amp; Caching</h3>
+            <ul class="badges"><li>PostgreSQL</li><li>MySQL</li><li>Redis</li></ul>
+          </article>
+
+          <article class="card skill-card reveal">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></div>
+            <h3>Database Migration</h3>
+            <ul class="badges"><li>Flyway</li></ul>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay:60ms">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-layout"/></svg></div>
+            <h3>Frontend Development</h3>
+            <ul class="badges"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>React.js</li><li>Bootstrap</li></ul>
+          </article>
+
+          <article class="card skill-card reveal" style="--delay:120ms">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-tool"/></svg></div>
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="badges"><li>Git</li><li>GitHub</li><li>Maven</li><li>Postman</li><li>Swagger/OpenAPI</li><li>IntelliJ IDEA</li><li>VS Code</li></ul>
+          </article>
+
+          <article class="card skill-card skill-wide reveal">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-cloud"/></svg></div>
+            <h3>Deployment &amp; Cloud</h3>
+            <ul class="badges"><li>Docker</li><li>AWS</li><li>Railway</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">03 — Experience</p>
+          <h2 id="exp-title">Professional Experience</h2>
+        </header>
+
+        <article class="card exp-card reveal">
+          <div class="exp-head">
+            <div class="exp-title">
+              <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg></div>
+              <div>
+                <h3>Java Developer</h3>
+                <p class="exp-company">Cloudrtech</p>
+              </div>
+            </div>
+            <span class="pill">Approximately 1 year of experience</span>
+          </div>
+
+          <ul class="exp-list">
+            <li>Developed backend features using Java and Spring Boot.</li>
+            <li>Designed and implemented RESTful APIs and integrated them with React.js frontend applications.</li>
+            <li>Wrote SQL queries and implemented database operations using PostgreSQL, JDBC, and Hibernate/JPA.</li>
+            <li>Implemented authentication and role-based authorization using Spring Security and JWT.</li>
+            <li>Managed database schema changes using Flyway migrations.</li>
+            <li>Tested REST APIs with Postman and documented APIs using Swagger/OpenAPI.</li>
+            <li>Used Git and GitHub for version control and team collaboration.</li>
+            <li>Worked with Docker, AWS, and Railway.</li>
+          </ul>
+
+          <ul class="badges badges-sm" aria-label="Technologies used">
+            <li>Java</li><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>PostgreSQL</li><li>Hibernate/JPA</li><li>Flyway</li><li>React.js</li><li>Docker</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">04 — Projects</p>
+          <h2 id="projects-title">Featured Projects</h2>
+          <p class="section-sub">Repository and demo links are placeholders until you add your own URLs in <code>index.html</code>.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project-card reveal">
+            <div class="project-visual v-violet" aria-hidden="true"><svg class="i"><use href="#i-users"/></svg></div>
+            <div class="project-body">
+              <h3>Interview Scheduler</h3>
+              <p class="project-desc">A web-based interview scheduling application with separate modules for Admin, HR, and Candidates.</p>
+              <ul class="feature-list">
+                <li>Job posting</li>
+                <li>Candidate applications</li>
+                <li>HR approval workflows</li>
+                <li>Application status tracking</li>
+                <li>Interview management</li>
+                <li>Responsive interface using JSP, HTML, CSS, and Bootstrap</li>
+                <li>Java backend logic integrated with MySQL using JDBC</li>
+              </ul>
+              <ul class="badges badges-sm"><li>Java</li><li>JSP</li><li>JDBC</li><li>MySQL</li><li>Bootstrap</li><li>Maven</li><li>Apache Tomcat</li></ul>
+              <div class="project-links">
+                <a class="link-btn is-placeholder" href="#" data-placeholder="GitHub repository" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg> GitHub Repository</a>
+                <a class="link-btn link-optional is-placeholder" href="#" data-placeholder="Live demo" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-external"/></svg> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project-card reveal" style="--delay:80ms">
+            <div class="project-visual v-blue" aria-hidden="true"><svg class="i"><use href="#i-layers"/></svg></div>
+            <div class="project-body">
+              <h3>Appscore Solution</h3>
+              <p class="project-desc">Contributed to a full-stack web application using Java-based backend technologies and a modern frontend.</p>
+              <ul class="feature-list">
+                <li>Backend functionality</li>
+                <li>API integration</li>
+                <li>Database operations</li>
+                <li>Frontend and backend integration</li>
+                <li>Data handling and user interactions</li>
+              </ul>
+              <ul class="badges badges-sm"><li>Java</li><li>Spring Boot</li><li>React.js</li><li>MySQL</li><li>REST APIs</li></ul>
+              <div class="project-links">
+                <a class="link-btn is-placeholder" href="#" data-placeholder="GitHub repository" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg> GitHub Repository</a>
+                <a class="link-btn link-optional is-placeholder" href="#" data-placeholder="Live demo" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-external"/></svg> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project-card reveal">
+            <div class="project-visual v-indigo" aria-hidden="true"><svg class="i"><use href="#i-pulse"/></svg></div>
+            <div class="project-body">
+              <div class="project-title-row">
+                <h3>Doctor Appointment System</h3>
+                <span class="status-pill"><span class="status-dot"></span>In Development</span>
+              </div>
+              <p class="project-desc">A full-stack doctor appointment booking system with separate modules for Admin, Doctors, and Patients.</p>
+              <ul class="feature-list">
+                <li>Secure authentication and role-based authorization</li>
+                <li>Doctor management</li>
+                <li>Doctor availability management</li>
+                <li>Appointment booking</li>
+                <li>Leave management</li>
+                <li>Prescription management</li>
+                <li>REST API development</li>
+                <li>Database schema migrations using Flyway</li>
+                <li>API documentation using Swagger</li>
+              </ul>
+              <ul class="badges badges-sm"><li>Java 21</li><li>Spring Boot</li><li>Spring Security</li><li>JWT</li><li>MySQL</li><li>React.js</li><li>Tailwind CSS</li><li>Flyway</li><li>Swagger</li></ul>
+              <div class="project-links">
+                <a class="link-btn is-placeholder" href="#" data-placeholder="GitHub repository" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg> GitHub Repository</a>
+                <a class="link-btn link-optional is-placeholder" href="#" data-placeholder="Live demo" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-external"/></svg> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card project-card reveal" style="--delay:80ms">
+            <div class="project-visual v-cyan" aria-hidden="true"><svg class="i"><use href="#i-globe"/></svg></div>
+            <div class="project-body">
+              <h3>Cloudrtech Company Website</h3>
+              <p class="project-desc">Contributed to the company website's layout and presentation, building a responsive and structured interface.</p>
+              <ul class="feature-list">
+                <li>Responsive page layouts</li>
+                <li>Website section development</li>
+                <li>Improved presentation and navigation</li>
+                <li>Layout support across different screen sizes</li>
+              </ul>
+              <ul class="badges badges-sm"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li></ul>
+              <div class="project-links">
+                <a class="link-btn is-placeholder" href="#" data-placeholder="GitHub repository" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg> GitHub Repository</a>
+                <a class="link-btn link-optional is-placeholder" href="#" data-placeholder="Live demo" target="_blank" rel="noopener noreferrer"><svg class="i" aria-hidden="true"><use href="#i-external"/></svg> Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + INTERNSHIP ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">05 — Education</p>
+          <h2 id="edu-title">Education &amp; Internship</h2>
+        </header>
+
+        <div class="edu-grid">
+          <article class="card edu-card reveal">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-grad"/></svg></div>
+            <p class="edu-period">2022 – 2025</p>
+            <h3>Bachelor of Computer Science (B.Sc.)</h3>
+            <p class="edu-school">Kundavai Nachiyar Government Women's Arts College, Thanjavur</p>
+            <p class="edu-cgpa"><span>CGPA</span> 8.5<small>/10</small></p>
+          </article>
+
+          <article class="card edu-card reveal" style="--delay:80ms">
+            <div class="card-icon"><svg class="i" aria-hidden="true"><use href="#i-chip"/></svg></div>
+            <p class="edu-period">Internship</p>
+            <h3>Fire Fighting Robot (IoT)</h3>
+            <p class="edu-school">CADD Centre</p>
+            <p class="edu-text">Developed an IoT-based robot using sensors to detect fires and activate water spraying for safer firefighting operations.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-wrap card reveal">
+          <div class="contact-info">
+            <p class="section-kicker">06 — Contact</p>
+            <h2 id="contact-title">Let’s Build Something Meaningful.</h2>
+            <p class="section-sub">I'm interested in opportunities where I can contribute to backend development, build reliable applications, and continue growing as a Java Developer.</p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-ico"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                <div><span class="contact-label">Email</span><a href="mailto:fredamerlinamulraj@gmail.com">fredamerlinamulraj@gmail.com</a></div>
+              </li>
+              <li>
+                <span class="contact-ico"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                <div><span class="contact-label">Phone</span><a href="tel:+917094199634">7094199634</a></div>
+              </li>
+              <li>
+                <span class="contact-ico"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                <div><span class="contact-label">Location</span><span>Tamil Nadu, India</span></div>
+              </li>
+              <li>
+                <span class="contact-ico"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+                <div><span class="contact-label">LinkedIn</span><a class="is-placeholder" href="#" data-placeholder="LinkedIn" target="_blank" rel="noopener noreferrer">Add your LinkedIn URL</a></div>
+              </li>
+              <li>
+                <span class="contact-ico"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></span>
+                <div><span class="contact-label">GitHub</span><a class="is-placeholder" href="#" data-placeholder="GitHub" target="_blank" rel="noopener noreferrer">Add your GitHub URL</a></div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="cName">Name</label>
+              <input type="text" id="cName" name="name" autocomplete="name" required aria-describedby="cNameErr" />
+              <p class="field-error" id="cNameErr" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="cEmail">Email</label>
+              <input type="email" id="cEmail" name="email" autocomplete="email" required aria-describedby="cEmailErr" />
+              <p class="field-error" id="cEmailErr" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="cSubject">Subject</label>
+              <input type="text" id="cSubject" name="subject" required aria-describedby="cSubjectErr" />
+              <p class="field-error" id="cSubjectErr" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="cMessage">Message</label>
+              <textarea id="cMessage" name="message" rows="5" required aria-describedby="cMessageErr"></textarea>
+              <p class="field-error" id="cMessageErr" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block"><svg class="i" aria-hidden="true"><use href="#i-send"/></svg> Send via Email App</button>
+            <p class="form-note">This site has no server. Submitting opens your email app with the message pre-filled, and you press send there. To receive messages directly, connect a backend or a form service.</p>
+            <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand"><span class="brand-mark">FM</span><span class="brand-text">A. Freda Merlin</span></a>
+        <p>Java Developer | Spring Boot | Backend Engineering</p>
+      </div>
+
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social-row" aria-label="Social profiles">
+        <li><a class="icon-btn is-placeholder" href="#" data-placeholder="GitHub" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (replace link)"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+        <li><a class="icon-btn is-placeholder" href="#" data-placeholder="LinkedIn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (replace link)"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> A. Freda Merlin. All rights reserved.</p>
+      <p>Built with care.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
